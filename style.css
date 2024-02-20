@@ -1,0 +1,527 @@
+html {
+	font-size:50%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+  --White: #FFFFFF;
+  --Magenta: #f44a8a;
+  --Blue: #4ab5e1;
+  --Dark-blue: #030020;
+  --Gray: #1E1E1E;
+  --Black-dim: rgba(0, 0, 0, 0.5);
+
+  background-color: var(--Dark-blue);
+
+  font-size: 2rem;
+  color: var(--White);
+  font-family: Comfortaa;
+  line-height: 1.2;
+  overflow-x: hidden;
+
+  background-image: url(./assets/bg-img.png);
+  background-size: cover;
+  background-position-x: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+h1 {
+  margin-bottom: 5rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+
+
+
+
+.button-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem 3rem 5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 9rem;
+
+  color: var(--Gray);
+  background-color: var(--Blue);
+}
+.button-a:hover {
+  background-color: var(--Magenta);
+  transition: 0.2s;
+  color: var(--White);
+}
+.button-b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem 3rem 5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 9rem;
+
+  color: var(--Blue);
+  background-color: var(--Gray);
+}
+.button-b:hover {
+  background-color: var(--Magenta);
+  transition: 0.2s;
+  color: var(--White);
+}
+
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bg {
+  z-index: -100;
+}
+
+.bg .ellipse-blur-1 {
+  margin: 0rem 0rem 45rem 190rem;
+  width: 130rem; 
+  height: 130rem;
+  filter: blur(100rem);
+  background-color: var(--Magenta);
+  border-radius: 90rem;
+}
+.bg .ellipse-blur-2 {
+  margin-right: 190rem;
+  width: 130rem;
+  height: 130rem;
+  filter: blur(50rem);
+  background-color: var(--Blue);
+  border-radius: 90rem;
+}
+
+
+
+
+.index main{
+  display: flex;
+  gap: 30rem;
+  padding-top: 70rem;
+}
+
+
+.index main .section-1 {
+  display: flex;
+  width: 120rem;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.index main .section-1 .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.index main .section-1 .left .below{
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+  
+}
+
+
+
+
+
+.index main .section-1 .right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.index main .section-1 .right .app-screen-3 {
+  margin-top: 12rem;
+  height: 40rem;
+}
+.index main .section-1 .right .app-screen-1 {
+  margin-bottom: 12rem;
+  height: 40rem;
+}
+.index main .section-1 .right .app-screen-2 {
+  height: 40rem;
+}
+
+
+.index main .section-2 {
+  width: 120rem;
+  display: flex;
+  flex-direction: column;
+}
+.index main .section-2 .top {
+  box-sizing: border-box;
+  padding-bottom: 6.9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.index main .section-2 .point {
+  margin-bottom: 7rem;
+  box-sizing: border-box;
+  padding-right: 2.9rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.index main .section-2 .point .point-img {
+  margin-right: 2rem;
+  width: 16.9rem;
+  height: 16.9rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 3rem;
+  flex-shrink: 0;
+}
+
+
+
+.index main .cover-img {
+  width: 100%;
+  height: 60rem;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.bg-img {
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+
+
+.window {
+  padding: 10rem 15rem 10rem 15rem;
+  width: 90rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Black-dim);
+  border-radius: 6rem;
+}
+.window h1 {
+  margin-bottom: 7.5rem;
+  text-align: center;
+}
+.window .text {
+  margin-bottom: 15.5rem;
+  text-align: center;
+}
+
+
+/*===== хедер  =====*/
+
+header {
+  width: 100%;
+  height: 12rem;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(1rem);
+  background-color: var(--Black-dim);
+}
+header .logo {
+  z-index: 20;
+  display: flex;
+  margin-left: 5rem;
+}
+header .logo .eye {
+  margin-right: 3rem;
+  width: 9rem;
+  height: 9rem;
+}
+header .logo .name {
+  font-size: 7rem;
+  font-weight: 400;
+  color: var(--White);
+  font-family: Damion;
+  text-decoration: none;
+}
+
+
+
+header nav {
+  margin-right: 2rem;
+  z-index: 20;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+header nav .tab {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+header nav .tab:hover {
+  color: var(--Magenta);
+  transition: 0.2s;
+}
+
+
+
+.burger-menu
+{
+  display: none;
+}
+
+
+
+
+
+/*===== футер =====*/
+footer {
+  box-sizing: border-box;
+  padding: 4rem 30rem 5rem 30rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(1rem);
+  background-color: var(--Black-dim);
+}
+footer .above {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .above .name {
+  font-size: 7rem;
+  color: var(--White);
+  font-family: Damion;
+}
+footer .above .soc-media-logos {
+  display: flex;
+  column-gap: 4rem;
+}
+footer .line {
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--White);
+}
+footer .copyright-text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--White);
+}
+
+
+
+
+
+
+/*===== для странички с ценами =====*/
+
+main {
+  padding: 15rem;
+}
+
+
+.plans {
+  display: flex;
+  margin: 10rem;
+  gap: 1rem;
+}
+
+.window-dim {
+  width: 30%;
+  padding: 5rem;
+  background-color: var(--Black-dim);
+  border-radius: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.window-dim .top h1{
+  height: 5rem;
+}
+.window-dim .top p{
+  height: 10rem;
+}
+
+li {
+  margin-bottom: 1rem;
+  list-style-type: "\2705";
+}
+
+.price {
+  display: block;
+  margin: 2rem;
+  text-align: center;
+}
+
+
+
+/*===== для странички с регистрацией =====*/
+
+.singin .base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 3rem;
+}
+
+label{ /* form-label */
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input { /* form-input */
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: 0px;
+  background-color: var(--Dark-blue);
+  border-radius: 1rem;
+}
+
+.singin{
+  height: 100%;
+}
+
+
+.about main{
+  gap: 10rem;
+}
+
+table {
+	width: 100%;
+  height: auto;
+	border-collapse: collapse;
+}
+
+.leancanvas-vertical {
+  display: none;
+}
+tr, td{
+  vertical-align: top;
+}
+.leancanvas tr, .leancanvas td{
+	border: 0.1rem solid;
+  color: var(--White);
+  padding: 2rem;
+  vertical-align: top;
+}
+td p {
+  margin-top: 2rem;
+}
+td li {
+  list-style-type: none;
+}
+
+
+section{
+  width: 100%;
+}
+
+section p{
+  margin-bottom: 2rem;
+}
+
+h3{
+  margin-bottom: 2rem;
+}
+
+.mindmap{
+  width: 100%;
+}
+
+.colums{
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+.width100{
+  width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+  main {
+    padding: 5rem;
+    padding-top: 20rem;
+  }
+  .index main {
+    gap: 20rem;
+  }
+  .index main .section-1{
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .index main .section-2{
+    width: auto;
+  }
+  .index main .window{
+    width: auto;
+    padding: 10rem 5rem 5rem 5rem;
+  }
+  footer{
+    padding: 5rem;
+  }
+  .plans{
+    flex-direction: column;
+    margin: 5rem 0 5rem 0;
+  }
+  .window-dim{
+    width: auto;
+  }
+  .leancanvas-normal {
+    display: none;
+  }
+  .leancanvas-vertical {
+    display: flex;
+  }
+  .colums{
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+    height: 80%;
+    z-index: 1000;
+    margin-right: 3rem;
+    justify-content: flex-end;    
+  }
+
+}
